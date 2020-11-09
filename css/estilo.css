@@ -1,0 +1,158 @@
+@font-face{
+    font-family: 'MiryadPro-BoldCN';
+    font-style: normal;
+    src: url(../fonts/MyriadPro-BoldCond.otf);
+}
+html{
+    height: 100%;
+}
+body{    
+    font-size: 14px;
+    overflow-x: hidden;
+    height: 100%;
+}
+.portada{
+    background: url(../images/48190363_l.jpg) no-repeat;
+    background-size: cover;
+
+    height: 92vh;
+}
+header{
+    position: relative;
+    background: #B4B4B4c2;
+    height: 70px;
+}
+.logo {
+	position: absolute;
+	background: url(../images/bg-logo.png) no-repeat;
+	top: 0;
+	left: 0;
+	max-width: 618px;
+	background-size: cover;
+	height: 110px;
+	width: 100%;
+}
+.logo img{
+    margin-top:37px;
+    margin-left: 30px;
+}
+.main-title{
+    font-family: 'MiryadPro-BoldCN';
+    font-size: 20em;
+    color: #ffffffc2;
+    margin: 0.2em 0 0 0;
+    padding: 0;
+    line-height: 0.5em;
+}
+.sub-title{
+    font-family: 'MiryadPro-BoldCN';
+    font-size: 11em;
+    color: #ffffffc2;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+.login{
+    background-color: #000000c2;
+    max-width: 445px;
+    height: 65vh;
+    display: block;
+    margin: auto;
+}
+.login form{
+    font-family: 'MiryadPro-BoldCN';
+    width: 65%;
+    color: white;
+    margin: 0px auto;
+    padding: 50px 0;
+}
+.login form .form-title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.login form input,.login form select{
+    border-radius: 20px;
+}
+.form-group label{
+    font-size: 1.4em;
+}
+.btn-davivienda{
+    background: rgb(162,9,25);
+    background: linear-gradient(0deg, rgba(162,9,25,1) 35%, rgba(162,9,25,1) 35%, rgba(208,32,41,1) 85%, rgba(208,32,41,1) 100%);
+    border: none;
+    width: 100%;
+    display: block;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+.btn-davivienda:hover{
+    color: #ffffff;
+}
+
+
+
+/*Media query*/
+@media(min-width:1441px){
+    .main-title{        
+        font-size: 22em;
+        margin-left: 200px;        
+    }
+    .sub-title{        
+        font-size: 12em;      
+        margin-left: 200px;   
+    }
+}
+@media(max-width:1024px){
+    .portada{
+        height: 91vh;
+    }
+    .main-title{        
+        font-size: 18em;    
+        margin-left: 10px;          
+    }
+    .sub-title{        
+        font-size: 10em;  
+        margin-left: 10px;            
+    }
+}
+@media(max-width:990px){
+    .login{
+        height: 45vh;
+        min-height: 520px;
+    }
+    .main-title{        
+        text-align: center;                
+    }
+    .sub-title{        
+        text-align: center;         
+    }
+}
+
+@media(max-width:768px){
+    .my-auto.mobile{
+        margin-top: 0 !important;
+    }    
+    .portada{
+        background-size: cover;
+    }
+    .main-title{        
+        font-size: 12em;                 
+    }
+    .sub-title{        
+        font-size: 6.5em;                    
+    }
+}
+@media(max-width:600px){
+    header{
+        margin-bottom: 50px;
+    }
+    .main-title{        
+        font-size: 9em;                 
+    }
+    .sub-title{        
+        font-size: 5em;                    
+    }
+}
